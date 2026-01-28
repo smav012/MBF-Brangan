@@ -1,0 +1,53 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+li {
+   margin:0 0 5px 0;   
+}
+
+a {
+    color: darkred;
+}
+table.item-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+table.display-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout: auto;
+    text-align: left;
+    width: 75%;
+}
+
+.item-table td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*.edit-table tr:nth-child(even) {
+    background-color: #dddddd;
+}*/
+
+/* box for menus and listings */
+.simplebox {
+  width: 600px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* box for text */
+.textbox {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}

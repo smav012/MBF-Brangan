@@ -1,0 +1,7 @@
+const SITE = {
+  title: "MBF Brangan Project",
+  subtitle: "Mapping Massachusetts Pretrial Systems",
+  description: "An educational mapping project documenting institutions, mechanisms, decision-makers, and harms within Massachusetts pretrial systems.",
+  lastUpdated: "January 2026",
+  citation: "Massachusetts Bail Fund, Brangan Project"
+};

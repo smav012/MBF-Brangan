@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("site-title").textContent = SITE.title;
+  document.getElementById("site-subtitle").textContent = SITE.subtitle;
+});

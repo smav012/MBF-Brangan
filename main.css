@@ -7,7 +7,7 @@ li {
 }
 
 a {
-    color: darkred;
+    color: #5526e3;
 }
 table.item-table {
     font-family: arial, sans-serif;
@@ -30,7 +30,7 @@ table.display-table {
 }
 
 .item-table tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #f3ebf5;
 }
 
 /*.edit-table tr:nth-child(even) {
@@ -38,6 +38,7 @@ table.display-table {
 }*/
 
 /* box for menus and listings */
+
 .simplebox {
   width: 600px;
   border: 2px solid black;

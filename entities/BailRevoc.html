@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBF Brangan Project, Entity: Bail Forfeitures</title>
+    <title>MBF Brangan Project, Entity: Bail Revocations</title>
 <link rel="stylesheet" href="../main.css">
 
 <style>
@@ -55,12 +55,12 @@ body {font-family: arial, sans-serif;}
 
 <!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
 <!-- this entity as master entity if available -->
-<h2>Bail Forfeitures</h3>
+<h2>Bail Revocations</h3>
 <ul>
 <li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
-<li><b>Secondary Types</b>: Court Enforcement/Compliance</a></li>
+<li><b>Secondary Types</b>: Preventative Detention</a></li>
 
-<li><b>2</b> relationships</li>
+<li><b>3</b> relationships</li>
 <!-- display master entities, if any -->
 
 <!-- display subordinates entities, if any -->
@@ -79,16 +79,20 @@ body {font-family: arial, sans-serif;}
 </div>
 
 <div id="entry" class="tabcontent">
-  <h3>Funding</h3>
-  <p>Doesn't <i>cost</i> the state money but can be a source of revenue (forfeited bail - money transfered to the state).</p>
+  <h3>Legal Memos</h3>
+  <p>Suffolk DA <a href="https://www.suffolkdistrictattorney.com/press-releases/items/2024/7/16/bail-revoked-for-dorchester-man-seized-with-gun-drugs-cash" target="_blank">Press Release</a> on Bail Revocation for "public safety" reasons, citing a Defendant with weapons, drugs and cash found during a traffic stop.</p>
+  <p>Suffolk DA <a href="https://www.suffolkdistrictattorney.com/press-releases/items/2023/1/27/prosecutors-successfully-petition-for-bail-revocation-for-boston-man-charged-with-spate-of-crimes-over-18-months" target="_blank">Press Release</a> on various factors that contribute to successful Bail Revocation motion.</p>
   <hr>
-  <h3>Potential Solutions</h3><p>
+  <h3>Potential Solutions</h3>
   <p><a href="https://e038407e-8024-4a7f-8f8c-ce70d24cbc8c.usrfiles.com/ugd/c9192e_afe12edfbe81482a88e8a8535051d856.pdf" target="_blank">Toward Safety, Liberty, and Equity: A Community-Centered Framework for Redesigning Minnesota's Pretrial System  Minnesota Justice Research Center, February, 2025.</p></a>
+  <hr>
+  <h3>Anecdotal Interviews</h3>
+  <p>"...Sometimes bail being too high, sometimes charge to be held accountable for a dangerous, dangerousness hearing. Bail might not be reasonable, or to be out on bail and they get caught for another charge. they even revoke your prior bail." -Tahkeese Brown at 12:02.</p>
 </div>
 
 <div id="relationships" class="tabcontent">
 
-<p><b>2</b> relationships</p>
+<p><b>3</b> relationships</p>
 
 <ol>  
   
@@ -96,7 +100,10 @@ body {font-family: arial, sans-serif;}
   <p>Clerks handle processing and notifications.</p>
   
   <li><b>Authorized by</b> &#8211; <b><a href="../entities/Judges.html">Judges</a></b></li>
-  <p>Judges declare forfeitures.</p>
+  <p>Judges revoke bail when conditions are violated.</p>
+  
+  <li><b>Enforced by</b> &#8211; <b><a href="../entities/Prosecutors.html">Prosecutors</a></b></li>
+  <p>DA’s Office can file motion to revoke bail.</p>
      
 </ol>     
 </div>
@@ -104,10 +111,9 @@ body {font-family: arial, sans-serif;}
 <div id="timeline" class="tabcontent">
   
 <h3>Timeline/Legislative History</h3><ul>
-  <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section20F" target-"_blank">M.G.L. c. 276 § 20F:</a> Forfeiture of bail.</li></ul> 
+	<li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58" target-"_blank">M.G.L. c. 276, § 58:</a> Bail Revocations Statue - bail revocations for those who violate any condition of release</a></li>
+	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section87" target-"_blank">M.G.L. c. 276, § 87:</a> outlines the process and grounds for bail violations and revocations, including failure to appear in court or noncompliance with bail conditions.</li></ul>
 </div>
-
-
 
 <script>
 function openTab(evt, name) {

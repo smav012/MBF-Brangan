@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBF Brangan Project, Entity: Bail Forfeitures</title>
+    <title>MBF Brangan Project, Entity: Community Justice Support Centers</title>
 <link rel="stylesheet" href="../main.css">
 
 <style>
@@ -55,10 +55,10 @@ body {font-family: arial, sans-serif;}
 
 <!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
 <!-- this entity as master entity if available -->
-<h2>Bail Forfeitures</h3>
+<h2>Community Justice Support Centers</h3>
 <ul>
 <li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
-<li><b>Secondary Types</b>: Court Enforcement/Compliance</a></li>
+<li><b>Secondary Types</b>: Service Provider</a></li>
 
 <li><b>2</b> relationships</li>
 <!-- display master entities, if any -->
@@ -80,11 +80,12 @@ body {font-family: arial, sans-serif;}
 
 <div id="entry" class="tabcontent">
   <h3>Funding</h3>
-  <p>Doesn't <i>cost</i> the state money but can be a source of revenue (forfeited bail - money transfered to the state).</p>
+  <p>OCC = $30,789,862 total budget across the whole state (unsure what this splits up as)</p>
   <hr>
-  <h3>Potential Solutions</h3><p>
-  <p><a href="https://e038407e-8024-4a7f-8f8c-ce70d24cbc8c.usrfiles.com/ugd/c9192e_afe12edfbe81482a88e8a8535051d856.pdf" target="_blank">Toward Safety, Liberty, and Equity: A Community-Centered Framework for Redesigning Minnesota's Pretrial System  Minnesota Justice Research Center, February, 2025.</p></a>
-</div>
+  <h3>Potential Solutions</h3>
+  <p>Colorado (“Community Reinvestment”) - 2021-22, 4 Community Reinvestment Initiatives provided $12.8 million to community-based services for re-entry, harm reduction, crime prevention, and crime survivors.</p></a>
+  <p>Texas (Harris County Youth Justice Community Reinvestment Fund) - 2022, provided an initial $4 million to organizations focused on youth diversion and intervention.</p></a>
+  </div>
 
 <div id="relationships" class="tabcontent">
 
@@ -92,11 +93,11 @@ body {font-family: arial, sans-serif;}
 
 <ol>  
   
-  <li><b>Administered by</b> &#8211; <b><a href="../entities/Clerks.html">Clerks</a></b></li>
-  <p>Clerks handle processing and notifications.</p>
+  <li><b>Monitored by</b> &#8211; <b><a href="../entities/ProbationOfficers.html">Probation Officers</a></b></li>
+  <p>Probation Officers supervise individuals in CJSC.</p>
   
-  <li><b>Authorized by</b> &#8211; <b><a href="../entities/Judges.html">Judges</a></b></li>
-  <p>Judges declare forfeitures.</p>
+  <li><b>Overseen by</b> &#8211; <b><a href="../entities/commish.html">Commissioner of Probation (Edward J Dolan)</a></b></li>
+  <p>Mass OCC handles administration of CJSC (OCC is a division of the Mass Probation Service which is part of the Office of the Commissioner of Probation).</p>
      
 </ol>     
 </div>
@@ -104,10 +105,12 @@ body {font-family: arial, sans-serif;}
 <div id="timeline" class="tabcontent">
   
 <h3>Timeline/Legislative History</h3><ul>
-  <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section20F" target-"_blank">M.G.L. c. 276 § 20F:</a> Forfeiture of bail.</li></ul> 
+	<li>OCC established 1996</li>
+	<li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58A" target-"_blank">M.G.L. c.276 58A:</a> Pretrial diversion (mostly for first time offenders).</a></li>
+	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleI/Chapter211f/Section3" target-"_blank">M.G.L. c. 211F sec3:</a> Sentence to community corrections program; duration; conditions; eligibility.</li>
+	<li>M.G.L. 276 sec 57, 58, 58A: Pretrial treatment - allows person to stay home while case is pending but makes it so they may have to check in at CJSC.</li>
+</ul>
 </div>
-
-
 
 <script>
 function openTab(evt, name) {

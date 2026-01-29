@@ -52,3 +52,12 @@ table.display-table {
   padding: 10px;
   margin: 10px;
 }
+
+.entity-box {
+  max-width: 75%;
+}
+
+ol li p {
+  margin: 4px 0 20px 0;
+  line-height: 1.9em;
+}

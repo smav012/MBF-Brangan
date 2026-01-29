@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBF Brangan Project, Entity: Bail Forfeitures</title>
+    <title>MBF Brangan Project, Entity: Defaults and Warrants (Willful Flight)</title>
 <link rel="stylesheet" href="../main.css">
 
 <style>
@@ -55,12 +55,12 @@ body {font-family: arial, sans-serif;}
 
 <!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
 <!-- this entity as master entity if available -->
-<h2>Bail Forfeitures</h3>
+<h2>Defaults and Warrants (Willful Flight)</h3>
 <ul>
 <li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
 <li><b>Secondary Types</b>: Court Enforcement/Compliance</a></li>
 
-<li><b>2</b> relationships</li>
+<li><b>5</b> relationships</li>
 <!-- display master entities, if any -->
 
 <!-- display subordinates entities, if any -->
@@ -81,36 +81,49 @@ body {font-family: arial, sans-serif;}
 
 <div id="entry" class="tabcontent">
   <h3>Funding</h3>
-  <p>Doesn't <i>cost</i> the state money but can be a source of revenue (forfeited bail - money transfered to the state).</p>
+  <p>No funding for the program directly but $300,000 to maintain text message system of court reminders.</p>
   <hr>
-  <h3>Potential Solutions</h3><p>
-  <p><a href="https://e038407e-8024-4a7f-8f8c-ce70d24cbc8c.usrfiles.com/ugd/c9192e_afe12edfbe81482a88e8a8535051d856.pdf" target="_blank">Toward Safety, Liberty, and Equity: A Community-Centered Framework for Redesigning Minnesota's Pretrial System  Minnesota Justice Research Center, February, 2025.</p></a>
-</div>
+  <h3>Current Legislative Initiatives</h3>
+  <p>HD.3330 - Michael S. Day (same bill H.4322 in Joint Committee on the Judiciary). Been in the works for a few years now, since 2020. Expands scope of who counts as probation officer and therefore who can arrest (without warrant) probationers. Last action 3/7/24 (Read second and ordered to a third reading)</p>
+  <hr>
+  <h3>Potential Solutions</h3>
+  <p>Kansas City, Missouri: Walk-in court that removes possibility of arrest for people trying to resolve warrants. Walk-in dockets language changed to state that people will not be arrested when they show up voluntarily to clear an appearance warrant. Expanded walk-in docket schedule and added legal aids (expansion of system). Trying to get a function to let people schedule their own court date.</p>
+  <hr>
+  <h3>Anecdotal Interviews</h3>
+  <p>"And they went through Mattapan and it and the people called the monitor people called me like, "Oh yeah, you're in a restricted area." And I'm like, well, I'm in the Uber. I'm leaving from the mall. That's the way they went. I got arrested for that." [And what happened?] "They put a warrant out for me and I got arrested." -Kaaron Brown at 23:05</p>
+  </div>
 
 <div id="relationships" class="tabcontent">
 
-<p><b>2</b> relationships</p>
+<p><b>5</b> relationships</p>
 
 <ol>  
   
-  <li><b>Administered by</b> – <b><a href="/entities/Clerks.html">Clerks</a></b>
-  (sometimes acting as <a href="/entities/BailMagistrate.html">Bail Magistrates</a>)
-  <p>Clerks handle processing, documentation, and notifications related to bail revocations.</p></li>
-  
   <li><b>Authorized by</b> – <b><a href="/entities/Judges.html">Judges</a></b>
-  <p>Judges declare forfeitures.</p></li>
-     
+  <p>Judges declare defaults and issue warrants for failure to appear.</p></li>
+  
+  <li><b>Enforced by</b> - <b><a href="/entities/WMU.html">Warrant Management Unit (WMU)</a></b>
+  <p>WMU issues, tracks, and manages default warrants authorized by the court.</p></li>
+  
+  <li><b>Enforced by</b> - <b><a href="/entities/PoliceDept.html">Police Departments</a></b>
+  <p>Police execute default warrants by holding and transporting individuals.</p></li>
+  
+  <li><b>Administered by</b> - <b><a href="/entities/Clerks.html">Clerks</a></b>
+  <p>Clerks manage court appearance records, process default paperwork, and update bail records.</p></li>
+  
+  <li><b>Monitored by</b> - <b><a href="/entities/ProbationOfficers.html">Probation Officers</a></b>
+  <p>Probation monitors compliance with release conditions and may report violations leading to defaults.</p></li>
+
 </ol>     
 </div>
 
 <div id="timeline" class="tabcontent">
   
 <h3>Timeline/Legislative History</h3><ul>
-  <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section20F" target-"_blank">M.G.L. c. 276 § 20F:</a> Forfeiture of bail.</li></ul> 
+	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section31" target-"_blank"> M.G.L. c. 276, § 29</a>: Outstanding warrant check prior to release on bail or recognizance.</li>
+	</ul>
 </div>
 </div>
-
-
 <script>
 function openTab(evt, name) {
   var i, tabcontent, tablinks;

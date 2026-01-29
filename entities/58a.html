@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBF Brangan Project, Entity: Bail Forfeitures</title>
+    <title>MBF Brangan Project, Entity: 58A Dangerousness Hearings</title>
 <link rel="stylesheet" href="../main.css">
 
 <style>
@@ -55,12 +55,12 @@ body {font-family: arial, sans-serif;}
 
 <!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
 <!-- this entity as master entity if available -->
-<h2>Bail Forfeitures</h3>
+<h2>58A Dangerousness Hearings</h3>
 <ul>
 <li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
-<li><b>Secondary Types</b>: Court Enforcement/Compliance</a></li>
+<li><b>Secondary Types</b>: Preventative Detention</a></li>
 
-<li><b>2</b> relationships</li>
+<li><b>7</b> relationships</li>
 <!-- display master entities, if any -->
 
 <!-- display subordinates entities, if any -->
@@ -80,37 +80,55 @@ body {font-family: arial, sans-serif;}
 </div>
 
 <div id="entry" class="tabcontent">
-  <h3>Funding</h3>
-  <p>Doesn't <i>cost</i> the state money but can be a source of revenue (forfeited bail - money transfered to the state).</p>
+<h3>Current Legislative Initiatives</h3>
+  <p>Bill H. 4290 (2021-22) An Act To Protect Victims of Crime and the Public --> would expand pre-trial detention related to dangerousness.</p>
   <hr>
-  <h3>Potential Solutions</h3><p>
-  <p><a href="https://e038407e-8024-4a7f-8f8c-ce70d24cbc8c.usrfiles.com/ugd/c9192e_afe12edfbe81482a88e8a8535051d856.pdf" target="_blank">Toward Safety, Liberty, and Equity: A Community-Centered Framework for Redesigning Minnesota's Pretrial System  Minnesota Justice Research Center, February, 2025.</p></a>
+  <h3>Potential Solutions</h3>
+  <p>New Jersey Criminal Justice Reform Act (RTF pg 15)</p>
+  <p>California SB10 (RTF pg 26): Similar to others, increased use of RATs while promising elimination of money bail. RATs would increase the power and funding of the PIC while also perpetuating racist and classist algorithms. 
+  This intervention is an example of trying to take out a ""tangential element of the PIC"" without reducing state or prison power.</p>
 </div>
 
 <div id="relationships" class="tabcontent">
 
-<p><b>2</b> relationships</p>
+<p><b>7</b> relationships</p>
 
 <ol>  
   
-  <li><b>Administered by</b> – <b><a href="/entities/Clerks.html">Clerks</a></b>
-  (sometimes acting as <a href="/entities/BailMagistrate.html">Bail Magistrates</a>)
-  <p>Clerks handle processing, documentation, and notifications related to bail revocations.</p></li>
+  <li><b>Authorized by</b> - <b><a href="/entities/Judges.html">Judges</a></b>
+  <p>District & Superior Courts determine detention/release in 58A hearings.</p></li>
   
-  <li><b>Authorized by</b> – <b><a href="/entities/Judges.html">Judges</a></b>
-  <p>Judges declare forfeitures.</p></li>
-     
+  <li><b>Enforced by</b> - <b><a href="/entities/PoliceDept.html">Police Departments</a></b>
+  <p>Detain, hold, and transport individuals on dangerousness warrants.</p></li>
+  
+  <li><b>Administered by</b> – <b><a href="/entities/Clerks.html">Clerks</a></b>
+  <p>Schedule hearings, notify parties, maintain court records.</p></li>
+  
+  <li><b>Advised by</b> – <b><a href="/entities/Prosecutors.html">Prosecutors</a></b>
+  <p>Prosecutor files motion and presents case for dangerousness detention.</p></li>
+  
+  <li><b>Advised by</b> - <b><a href="/entities/defensecounsel.html">Defense Counsel</a></b>
+  <p>Represents defendant in 58A hearings.</p></li>
+  
+  <li><b>Advised by</b> - <b><a href="/entities/ProbationOfficers.html">Probation Officers</a></b>
+  <p>Provides criminal history and background for hearings.</p></li>
+  
+  <li><b>Advised by</b> - <b><a href="/entities/CJIS.html">CJIS/Police Records Departments</a></b>
+  <p>Provides criminal history and background for hearings.</p></li>
+  
 </ol>     
 </div>
 
 <div id="timeline" class="tabcontent">
   
 <h3>Timeline/Legislative History</h3><ul>
-  <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section20F" target-"_blank">M.G.L. c. 276 § 20F:</a> Forfeiture of bail.</li></ul> 
+	<li>Commonwealth v. R.P. (1974) – SJC ruling establishing judicial power to consider dangerousness when making bail decisions.</li>
+	<li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58A" target="_blank">M.G.L. c. 276, §58A:</a> Dangerousness Hearing Statute (1994) – judge can hold someone deemed "dangerous" for up to 120 days before trial.</li>
+	<li<a href="href="https://www.massachusettscriminallawyer-blog.com/sjc-weighs-in-on-what-qualifies-as-a-predicate-offense-for-a-dangerousness-hearing/" target="_blank">" target="_blank">Massachusetts General Laws – Offenses under 58A.</li>
+	<li><i>NEW SINCE AUGUST 2024:</i> <a href="https://www.mass.gov/doc/adw-is-58a-eligible-cruz-v-commonwealth-massappct-august-12-2024/download" target="_blank"> assault with a dangerous weapon (ADW) can be charged under 58A.</a></li>
+	</ul>
 </div>
 </div>
-
-
 <script>
 function openTab(evt, name) {
   var i, tabcontent, tablinks;

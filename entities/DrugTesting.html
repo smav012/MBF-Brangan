@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBF Brangan Project, Entity: Drug Testing</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+body {font-family: arial, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<!--Image header--->
+<img src="/images/*******" alt="MBF Brangan Project Logo">
+<h2><a href="../index.html">MBF Brangan Project</a></h2>
+
+
+<!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
+<!-- this entity as master entity if available -->
+<h2>Drug Testing</h2>
+<ul>
+<li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
+<li><b>Secondary Types</b>: Pretrial Condition of Release</a></li>
+
+<li><b>7</b> relationships</li>
+<!-- display master entities, if any -->
+
+<!-- display subordinates entities, if any -->
+
+<!--
+<li>View within <a href="https://mapliberation.org/dev/map_js/?entities=Abington%20Police%20Department" target="_blank">web</a></li>
+</ul>-->
+<br>
+
+<div class="entity-box">
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'entry')"
+  id="defaultOpen">Entry</button>
+  <button class="tablinks" onclick="openTab(event, 'timeline')" id="defaultOpen">Timeline</button>
+  <button class="tablinks" onclick="openTab(event, 'relationships')">Relationships</button>
+</div>
+
+<div id="entry" class="tabcontent">
+  <h3>Funding Sources/Budget</h3>
+  <p>$450,000 towards in FY2024 expanded drug testing capacity Office of Commissioner of Probation</p>
+  <p>$7,455,505 = specialty drug courts</p>
+
+  <hr>
+
+  <h3>Current Legislative Initiatives</h3>
+  <p>Bill S.982 : An act relative to treatment not imprisonment. A reform aimed at emphasizing treatment over imprisonment, still requires treatment as a condition of probation.</p>
+  <p>SD.2483 - Julian Cyr (also mentions Joanne M. Comerford, Jason M. Lewis, John F. Keenan). Most recent in a line of same named bills that builds up harm reduction agencies (previous bills mentioned safe-consumption sites), this bill speaks not of safe-consumption sites but protections for harm reduction agencies/organizations and people who enter them.</p>
+  <p>HD.283 (2023-2025) - Joseph D. McKenna (previous version H.2235). Patient on probation with drug testing must take drug test before getting opiod pain medication. Last action 7/1/24 (accompanied study order).</p>
+
+  <hr>
+
+  <h3>Legal Memos & Reports</h3>
+  <p>Essex County DA: records request accepted, no legal memos on the relevant topics after search.</p>
+  <p>Middlesex DA: request sent, no answer.</p>
+  <p>Worcester DA: request sent, response: considered "privileged information".</p>
+  <p>CSPS main issue/resource bank admin: request sent, no answer; CSPS admin for Boston, Lynn, Lawrence, Worcester: request sent, no answer.</p>
+</div>
+
+<div id="relationships" class="tabcontent">
+
+<p><b>2</b> relationships</p>
+
+<ol>  
+  
+  <li><b>Overseen by</b> - <b><a href="DrugCourts.html">Drug Courts</a></b>
+  <p>Drug Courts use drug testing results to make decisions.</p></li>
+  
+  <li><b>Administered by</b> - <b><a href="DrugTestingCompanies.html">Drug Testing Companies</a></b>
+  <p>Contracted Drug Testing Companies administer tests.</p></li>
+  
+</ol>     
+</div>
+
+<div id="timeline" class="tabcontent">
+  
+<h3>Timeline/Legislative History</h3><ul>
+	<li>Commonwealth v. R.P. (1974) - SJC ruling establishing judicial power to consider dangerousness when making bail decisions.</li>
+	<li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58A" target="_blank">M.G.L. c.276, §58A</a>.</li>
+	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter111E/Section10" target="_blank">M.G.L. c.111E, §10</a>: judge can dismiss drug cases.</li>
+  <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter111E/Section12" target="_blank">M.G.L. c.111E §12</a>: Probation of drug dependent persons; treatment; urinalysis program; courts can order treatment as a condition of probation (1981).</li>
+  <li>Massachusetts Interagency Council on Substance Abuse and Prevention (2015) — Special commission for studying substance addiction.</li>
+</li>
+
+</ul>
+</div>
+</div>
+</ul>
+<script>
+function openTab(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+<p>
+Back to <a href="../index.html">main page</a>.
+</p>
+<!-- <i>Date generated:</i> July 7, 2022 -->
+</body>
+</html>

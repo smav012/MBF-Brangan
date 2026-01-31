@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBF Brangan Project, Entity: GPS Monitoring</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+body {font-family: arial, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<!--Image header--->
+<img src="/images/*******" alt="MBF Brangan Project Logo">
+<h2><a href="../index.html">MBF Brangan Project</a></h2>
+
+
+<!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
+<!-- this entity as master entity if available -->
+<h2>GPS Monitoring</h2>
+<ul>
+<li><b>Type</b>: <a href="../entity_types/Mechanisms.html">Mechanism</a></li>
+<li><b>Secondary Types</b>: Electronic Monitoring</a></li>
+
+<li><b>4</b> relationships</li>
+<!-- display master entities, if any -->
+
+<!-- display subordinates entities, if any -->
+
+<!--
+<li>View within <a href="https://mapliberation.org/dev/map_js/?entities=Abington%20Police%20Department" target="_blank">web</a></li>
+</ul>-->
+<br>
+
+<div class="entity-box">
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'entry')"
+  id="defaultOpen">Entry</button>
+  <button class="tablinks" onclick="openTab(event, 'timeline')" id="defaultOpen">Timeline</button>
+  <button class="tablinks" onclick="openTab(event, 'relationships')">Relationships</button>
+</div>
+
+<div id="entry" class="tabcontent">
+  <h3>Funding</h3>
+  <p>$350,000 allocated towards “increased electronic monitoring capacity” in FY2024; unclear if for all probation or pre-trial services.</p>
+  <hr>
+  <h3>Current Legislative Initiatives</h3>
+  <p>HD.1670 / SD.1033 (2023-2024): penalties for tampering with GPS devices; paired with SD.1032 / S.1098 (felony, minimum 2 years imprisonment). Last actions: 8/8/24 & H.4989/HD.2482 comprehensive bill draft.</p>
+  <hr>
+  <h3>Potential Solutions</h3>
+  <p>Illinois pre-trial GPS law (720 ILCS 5/110-5 & 730 ILCS 5/5-8A-4): prosecutors prove need, judges reconsider every 60 days, limited freedom restrictions, credit for time served while monitored.</p>
+  <hr>
+  <h3>Anecdotal Interviews</h3>
+  <p>"In the beginning, when you have it, it feels like the lesser of two evils... The ankle monitor doesn't do anything, it just is the mechanism used to know where the person is. If they do decide to do the crime, it just keeps them locally, it just keeps them controled in their element." - Charlese Jackson at 11:45 to 12:20</p>
+  <p>"And I think the person should be interviewed before they get the equipment. I think that, that's what they don't do. They don't look at your circumstance or your situation. They just throw you on an ankle monitor. They don't know if you've lived 20 miles from the grocery store. They don't know if you have children at home like dogs at home, animals at home. They don't know if your pharmacy is 2 miles away."  - Charlese Jackson at 13:52 to 14:23 </p>
+  <p>"...Gave it to him from 8:00 to 6:00, which still probably wasn't really enough time, because now he was trying to work his stuff. But the doctor told him he was on GPS, so you can't work. It was really hard for him to just be, you know, a regular person like from for try to provide for big kids and stuff because he couldn't go outside because of something that the police wrongfully accused him of." - Mya Rodrique at 06:47</p>
+  <p>"So I had a 9:00 curfew. I had a 7:00 and 9:00. So 7:00 AM to 9:00 PM...So everything like I had an overnight job that I ended up losing because I couldn't go to it no more because I was... I had the bracelet." - Kaaron Brown at 17:23</p>
+  <hr>
+  <h3>Legal Memos</h3>
+  <p>CPCS staff attorney quoted in <a href="https://masslawyersweekly.com/2021/05/29/sjc-overturns-conviction-due-to-limits-of-gps-data/" target="_blank">Mass Lawyers Weekly</a> about an SJC decision tossing out evidence from a GPS ankle monitor that showed a defendant’s movements (2021).</p>
+  <p><a href="https://masslawyersweekly.com/wp-content/blogs.dir/1/files/2021/05/10-059-21.pdf" target="_blank">Commonwealth v. Davis (2021)</a></p>
+  <p>Suffolk County's DA Office <a href="https://www.suffolkdistrictattorney.com/press-releases/items/2025/4/18/boston-man-charged-with-snatching-purses-while-on-probation-gps-monitoring" target="_blank">Press Release</a> on arresting repeat offender using GPS monitoring (2025).</p>
+  <p>Hampden County DA: ALL records request denied due to "high costs" of retrieval and labor-intensive ask for record-keepers.</p>
+</div>
+
+<div id="relationships" class="tabcontent">
+
+<p><b>4</b> relationships</p>
+
+<ol>  
+  
+  <li><b>Authorized by</b> - <b><a href="Commish.html">Commissioner of Probation</a></b>
+  <p>Commissioner of Probation sets policy and authorizes use of electronic monitoring.</p></li>
+  
+  <li><b>Enforced by</b> - <b><a href="ELMO.html">ELMO Unit</a></b>
+  <p>ELMO Unit enforces GPS monitoring conditions and responds to violations.</p></li>
+  
+  <li><b>Overseen by</b> - <b><a href="ParoleBoard.html">Parole Board</a></b>
+  <p>Parole Board may impose GPS monitoring as a condition of parole.</p></li>
+  
+  <li><b>Monitored by</b> - <b><a href="ProbationOfficers.html">Probation Officers</a></b>
+  <p>Probation Officers monitor compliance with GPS conditions and report violations.</p></li>
+
+</ol>     
+</div>
+
+<div id="timeline" class="tabcontent">
+  
+<h3>Timeline/Legislative History</h3><ul>
+	<li>MPS introduces GPS monitoring April 2001 for probationers.</li>
+    <li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58" target="_blank"></a>M.G.L. c. 276, §58</a>: amended 2006</li>
+    <li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleI/Chapter265/Section47" target="_blank">M.G.L. c. 265 §47 (2006)</a>:requires GPS for sex offender probationers.</li>
+    <li><a href="https://law.justia.com/cases/massachusetts/supreme-court/2014/sjc-11483.html" target="_blank">Commonwealth v. Guzman (2014)</a>: GPS as condition doesn't violate due process.</li>
+    <li><a href="https://law.justia.com/cases/massachusetts/court-of-appeals/2016/15-p-663.html" target="_blank">Commonwealth v. Grundman (2016)</a>: special case GPS during sentencing not imposed.</li>
+    <li><a href="https://law.justia.com/cases/massachusetts/supreme-court/2019/sjc-12545.html" target="_blank">Commonwealth v. Feliz (2019)</a>: blanket GPS monitoring violates right to privacy.</li>
+    <li><a href="https://law.justia.com/cases/massachusetts/supreme-court/2020/sjc-12744.html" target="_blank">Commonwealth v. Norman (2020)</a>: limits pre-trial GPS monitoring power.</li> 
+</ul>
+
+
+</div>
+</div>
+<script>
+function openTab(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+<p>
+Back to <a href="../index.html">main page</a>.
+</p>
+<!-- <i>Date generated:</i> July 7, 2022 -->
+</body>
+</html>

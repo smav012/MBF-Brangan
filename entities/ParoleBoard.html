@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBF Brangan Project, Entity: Parole Board</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+body {font-family: arial, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<!--Image header--->
+<img src="/images/*******" alt="MBF Brangan Project Logo">
+<h2><a href="../index.html">MBF Brangan Project</a></h2>
+
+
+<!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
+<!-- this entity as master entity if available -->
+<h2>Parole Board</h2>
+<ul>
+<li><b>Type</b>: <a href="../entity_types/decisionmakers.html">Decision Maker</a></li>
+<li><b>Secondary Types</b>: Judicial Authority</a></li>
+
+<li><b>2</b> relationships</li>
+<!-- display master entities, if any -->
+
+<!-- display subordinates entities, if any -->
+
+<!--
+<li>View within <a href="https://mapliberation.org/dev/map_js/?entities=Abington%20Police%20Department" target="_blank">web</a></li>
+</ul>-->
+<br>
+
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'entry')"
+  id="defaultOpen">Entry</button>
+  <button class="tablinks" onclick="openTab(event, 'timeline')" id="defaultOpen">Timeline</button>
+  <button class="tablinks" onclick="openTab(event, 'relationships')">Relationships</button>
+</div>
+
+<div id="entry" class="tabcontent">
+  <h3>Entity</h3>
+  <p>...</p>
+  </div>
+
+<div id="relationships" class="tabcontent">
+
+<p><b>2</b> relationships</p>
+
+<ol>  
+  
+  <li><b>Oversees</b> - <b><a href="GPS.html">GPS</a></b>
+  <p>Parole Board may impose GPS monitoring as a condition of parole.</p></li>
+  
+  <li><b>Oversees</b> - <b><a href="SCRAM.html">SCRAM</a></b>
+  <p>Parole Board may impose SCRAM monitoring as a condition of parole.</p></li>
+  
+</ol>     
+</div>
+
+<div id="timeline" class="tabcontent">
+  
+<h3>Timeline/Legislative History</h3><ul>
+	<li>need info</li>
+	</ul>
+</div>
+
+<script>
+function openTab(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+</ul>
+<p>
+Back to <a href="../index.html">main page</a>.
+</p>
+<!-- <i>Date generated:</i> July 7, 2022 -->
+</body>
+</html>

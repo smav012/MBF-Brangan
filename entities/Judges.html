@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MBF Brangan Project, Entity: Bail Revocations</title>
+    <title>MBF Brangan Project, Entity: Judges</title>
 <link rel="stylesheet" href="../main.css">
 
 <style>
@@ -55,12 +55,12 @@ body {font-family: arial, sans-serif;}
 
 <!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
 <!-- this entity as master entity if available -->
-<h2>Bail Revocations</h2>
+<h2>Judges</h2>
 <ul>
-<li><b>Type</b>: <a href="/entity_types/Mechanisms.html">Mechanism</a></li>
-<li><b>Secondary Types</b>: Preventative Detention</a></li>
+<li><b>Type</b>: <a href="../entity_types/decisionmakers.html">Decision Maker</a></li>
+<li><b>Secondary Types</b>: Judicial Authority</a></li>
 
-<li><b>3</b> relationships</li>
+<li><b>8</b> relationships</li>
 <!-- display master entities, if any -->
 
 <!-- display subordinates entities, if any -->
@@ -70,7 +70,6 @@ body {font-family: arial, sans-serif;}
 </ul>-->
 <br>
 
-<div class="entity-box">
 <!-- Tabs -->
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'entry')"
@@ -80,42 +79,48 @@ body {font-family: arial, sans-serif;}
 </div>
 
 <div id="entry" class="tabcontent">
-  <h3>Potential Solutions</h3>
-  <p><a href="https://e038407e-8024-4a7f-8f8c-ce70d24cbc8c.usrfiles.com/ugd/c9192e_afe12edfbe81482a88e8a8535051d856.pdf" target="_blank">Toward Safety, Liberty, and Equity: A Community-Centered Framework for Redesigning Minnesota's Pretrial System  Minnesota Justice Research Center, February, 2025.</p></a>
-  <hr>
-  <h3>Anecdotal Interviews</h3>
-  <p>"...Sometimes bail being too high, sometimes charge to be held accountable for a dangerous, dangerousness hearing. Bail might not be reasonable, or to be out on bail and they get caught for another charge. they even revoke your prior bail." - Tahkeese Brown at 12:02.</p>
-  <HR>
-  <h3>Legal Memos</h3>
-  <p>Suffolk DA <a href="https://www.suffolkdistrictattorney.com/press-releases/items/2024/7/16/bail-revoked-for-dorchester-man-seized-with-gun-drugs-cash" target="_blank">Press Release</a> on Bail Revocation for "public safety" reasons, citing a Defendant with weapons, drugs and cash found during a traffic stop.</p>
-  <p>Suffolk DA <a href="https://www.suffolkdistrictattorney.com/press-releases/items/2023/1/27/prosecutors-successfully-petition-for-bail-revocation-for-boston-man-charged-with-spate-of-crimes-over-18-months" target="_blank">Press Release</a> on various factors that contribute to successful Bail Revocation motion.</p>
-</div>
+  <h3>Judges</h3>
+  <p><i>Judges</i> as an entity include the Trial Courts, District Courts, and Supreme Courts. They are usual the major decision makers when it comes to many pretrial entities.</p>
+  </div>
 
 <div id="relationships" class="tabcontent">
 
-<p><b>3</b> relationships</p>
+<p><b>8</b> relationships</p>
 
 <ol>  
   
-  <li><b>Administered by</b> – <b><a href="Clerks.html">Clerks</a></b>
-  (sometimes acting as <a href="/entities/BailMagistrate.html">Bail Magistrates</a>)
-  <p>Clerks handle processing and notifications.</p></li>
+  <li><b>Decide upon</b> - <b><a href="Sec58.html">Sec 58/Cash Bail and Personal Recognizance</a></b>
+  <p>Judges approve or deny bail.</p></li>
   
-  <li><b>Authorized by</b> &#8211; <b><a href="Judges.html">Judges</a></b>
+  <li><b>Decide upon</b> - <b><a href="BailRevoc.html">Bail Revocations</a></b>
   <p>Judges revoke bail when conditions are violated.</p></li>
   
-  <li><b>Enforced by</b> &#8211; <b><a href="Prosecutors.html">Prosecutors</a></b>
-  <p>DA’s Office can file motion to revoke bail.</p></li>
-     
+  <li><b>Decide upon</b> - <b><a href="58a.html">58A Dangerousness Hearings</a></b>
+  <p>Judges determine detention/release in 58A hearings.</p></li>
+  
+  <li><b>Decide upon</b> - <b><a href="WillfulFlight.html">Defaults and Warrants (Willful Flight)</a></b>
+  <p>Judges declare defaults and issue warrants for failure to appear.</p></li>
+  
+  <li><b>Decide upon</b> - <b><a href="BailForfeitures.html">Bail Forfeitures</a></b>
+  <p>Judges declare Bail Forfeitures.</p></li>
+  
+  <li><b>Decide upon</b> - <b><a href="Sec35.html">Section 35</a></b>
+  <p>Judges authorize Section 35 civil commitments.</p></li>
+  
+  <li><b>Decide upon</b> - <b><a href="CommunityService.html">Community Service</a></b>
+  <p>Judges refer people to Community Services; part of trial court pretrial process.</p></li>
+  
+  <li><b>Decide upon</b> - <b><a href="ProbationViolations.html">Probation Violations</a></b>
+  <p>**NEED DESCRIPTION.**</p></li>
+
 </ol>     
 </div>
 
 <div id="timeline" class="tabcontent">
   
 <h3>Timeline/Legislative History</h3><ul>
-	<li><a href="https://malegislature.gov/laws/generallaws/partiv/titleii/chapter276/section58" target="_blank">M.G.L. c. 276, § 58:</a> Bail Revocations Statue - bail revocations for those who violate any condition of release</a></li>
-	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter276/Section87" target="_blank">M.G.L. c. 276, § 87:</a> outlines the process and grounds for bail violations and revocations, including failure to appear in court or noncompliance with bail conditions.</li></ul>
-</div>
+	<li>need info</li>
+	</ul>
 </div>
 
 <script>

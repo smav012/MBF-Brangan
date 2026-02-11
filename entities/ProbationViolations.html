@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBF Brangan Project, Entity: Probation Violations</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+body {font-family: arial, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<!--Image header--->
+<img src="/images/*******" alt="MBF Brangan Project Logo">
+<h2><a href="../index.html">MBF Brangan Project</a></h2>
+
+
+<!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
+<!-- this entity as master entity if available -->
+<h2>Probation Violations</h2>
+<ul>
+<li><b>Type</b>: <a href="/entity_types/Mechanisms.html">Mechanism</a></li>
+<li><b>Secondary Types</b>: Court Enforcement/Compliance</a></li>
+
+<li><b>3</b> relationships</li>
+<!-- display master entities, if any -->
+
+<!-- display subordinates entities, if any -->
+
+<!--
+<li>View within <a href="https://mapliberation.org/dev/map_js/?entities=Abington%20Police%20Department" target="_blank">web</a></li>
+</ul>-->
+<br>
+
+<div class="entity-box">
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'entry')"
+  id="defaultOpen">Entry</button>
+  <button class="tablinks" onclick="openTab(event, 'timeline')" id="defaultOpen">Timeline</button>
+  <button class="tablinks" onclick="openTab(event, 'relationships')">Relationships</button>
+</div>
+
+<div id="entry" class="tabcontent">
+  <h3>Current Legislative Initiatives</h3>
+  <p>HD.1073 (2023-2025) - Daniel J. Hunt (senate version SD.1100 Patricia D. Jehlen). Regards time served after probation violation. Last action 2/29/24 (Bill reported favorably and referred to committe on Senate Ways and Means) or 12/31/24 (no further action taken).</p>
+  <p>HD.3234 (2023-2025) - Andres X Vargas (senate version SD2078 Adam Gomez). Phrasing probation as rehabilitative, extends probation if defendant does not complete court ordered substance use treatment program. Last action 6/5/24 (accompanied study order).</p>
+  <p>HD.3412 (2023-2025) - Kate Lipper-Garabedian. Extends judicial discretion for probation to take more things into account, refer to notes doc. Senate version of this bill is less expansive. Last action 6/5/24 (accompanied study order).</p>
+  <hr>
+  <h3>Potential Solutions</h3>
+  <p>California (AB1950-2020), Louisiana (SB139-2017), New York (S4664A-2014), Virginia (HB5148-2020) - eliminated minimum sentences, set caps on probation sentences, awarded “compliance credits” REFORM.</p>
+  <p>New York (S1144A-2021) - “Less is More” Act that restricts incarceration from some technical violations.</p>
+  <p>Michigan (S1050-2020) - restricts the amount of time a person can be incarcerated for technical violations of probation</p>
+  <hr>
+  <h3>Anecdotal Interviews</h3>
+  <p>"I have one only when I was like in juvenile, I was like 14. I violated it. I was only out for like a month or something... Just, I mean, when I was like 14, I was a kid. I was misguided and I didn't... And I thought life was different. And then definitely it took me a long time." - John Quinn at 19:04 to 21:23 (part 1).</p>
+  <p>"He did the time because I think it was probably a violation, why they held him for so long to like 7-8 months, and then they released him on bail. And then yeah, soon when his trial is over in a few days and he believed to win his case, hopefully he will get money back. We'll get our money." - Mya Rodrique at 05:23.</p>
+  <p>"They was judging me for, they made a mistake one time where I was being held in two places... I was on probation and I said on Superior. But I had a district case, so I beat the district case, so the stupid *** correctional officer comes up. They all corrupt anyway. Even my lawyer was corrupt. So stupid." - Alex Graham at 52:21.</p>
+  <p>"[So it's sort of like they stop people randomly, but by association, like, oh, they stopped them once before or they kind of know... and then they happen to get lucky that somebody actually does have something going on that they can get them for.] Yeah, 9 times out of 10 someone is always on probation... or parole. That's the reason and that and that was always my thing too. I was always on probation...That's the reason for them to hold you." - Tahkeese Brown at 22:14.</p>
+  </div>
+
+<div id="relationships" class="tabcontent">
+
+<p><b>1</b> relationships</p>
+
+<ol>  
+  
+  <li><b>Enforced by</b> - <b><a href="BailMagistrate.html">Prosecutors</a></b>
+  <p>NEED INFO.</p></li>
+     
+</ol>     
+</div>
+
+<div id="timeline" class="tabcontent">
+  
+<h3>Timeline/Legislative History</h3><ul>
+	<li><a href="https://malegislature.gov/Laws/GeneralLaws/PartIV/TitleII/Chapter279/Section3" target="_blank">M.G.L c.279 sec 3:</a> Arrest without warrant of person on probation; notice of surrender; surrender hearing; warrant for arrest of person's already imprisoned; application for disposition; temporary custody.</li>
+</div>
+</div>
+
+<script>
+function openTab(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+</ul>
+<p>
+Back to <a href="../index.html">main page</a>.
+</p>
+<!-- <i>Date generated:</i> July 7, 2022 -->
+</body>
+</html>

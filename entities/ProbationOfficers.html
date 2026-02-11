@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBF Brangan Project, Entity: Probation Officers</title>
+<link rel="stylesheet" href="../main.css">
+
+<style>
+body {font-family: arial, sans-serif;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #000000;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<!--Image header--->
+<img src="/images/*******" alt="MBF Brangan Project Logo">
+<h2><a href="../index.html">MBF Brangan Project</a></h2>
+
+
+<!-- TODO: add code to display SUBORDINATE entites - i.e., entities that have -->
+<!-- this entity as master entity if available -->
+<h2>Probation Officers</h2>
+<ul>
+<li><b>Type</b>: <a href="../entity_types/decisionmakers.html">Decision Maker</a></li>
+<li><b>Secondary Types</b>: Enforcement Authority</a></li>
+
+<li><b>7</b> relationships</li>
+<!-- display master entities, if any -->
+
+<!-- display subordinates entities, if any -->
+
+<!--
+<li>View within <a href="https://mapliberation.org/dev/map_js/?entities=Abington%20Police%20Department" target="_blank">web</a></li>
+</ul>-->
+<br>
+
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'entry')"
+  id="defaultOpen">Entry</button>
+  <button class="tablinks" onclick="openTab(event, 'timeline')" id="defaultOpen">Timeline</button>
+  <button class="tablinks" onclick="openTab(event, 'relationships')">Relationships</button>
+</div>
+
+<div id="entry" class="tabcontent">
+  <h3>Entity</h3>
+  <p>...</p>
+  </div>
+
+<div id="relationships" class="tabcontent">
+
+<p><b>7</b> relationships</p>
+
+<ol>  
+  
+  <li><b>Enforce</b> - <b><a href="Sec35.html">Section 35</a></b>
+  <p>Probation Officers may initiate, coordinate, or assist in the enforcement of Section 35 civil commitment orders, including transporting individuals to treatment facilities and monitoring compliance with court-ordered commitments..</p></li>
+  
+  <li><b>Monitor</b> - <b><a href="CJSC.html">Community Justice Support Centers</a></b>
+  <p>Probation Officers supervise individuals in CJSC.</p></li>
+  
+  <li><b>Monitor</b> - <b><a href="WillfulFlight.html">Defaults and Warrants (Willful Flight)</a></b>
+  <p>Probation Officers monitor compliance with release conditions and may report violations leading to defaults.</p></li>
+  
+  <li><b>Monitor</b> - <b><a href="GPS.html">GPS</a></b>
+  <p>Probation Officers monitor compliance with GPS conditions and report violations.</p></li>
+  
+  <li><b>Monitor</b> - <b><a href="SCRAM.html">SCRAM</a></b>
+  <p>Probation Officers track SCRAM compliance and initiate enforcement actions when necessary.</p>
+  
+  <li><b>Advise upon</b> - <b><a href="Sec58.html">Sec 58/Cash Bail and Personal Recognizance</a></b>
+  <p>Officers provide background reports used in bail decisions.</p></li>
+  
+  <li><b>Advise upon</b> - <b><a href="58a.html">58A Dangerousness Hearings</a></b>
+  <p>Officers provide criminal history and background for hearings.</p></li>
+  
+</ol>     
+</div>
+
+<div id="timeline" class="tabcontent">
+  
+<h3>Timeline/Legislative History</h3><ul>
+	<li>need info</li>
+	</ul>
+</div>
+
+<script>
+function openTab(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+</ul>
+<p>
+Back to <a href="../index.html">main page</a>.
+</p>
+<!-- <i>Date generated:</i> July 7, 2022 -->
+</body>
+</html>

@@ -29,10 +29,18 @@ h2 {
   font-size: 20px;
 }
 
-
+/* li breathing room 
 li {
-   margin:0 0 5px 0;   
+   margin:0 0 -10px 0;   
 }
+*/
+
+ol li p {
+  margin: 4px 0 20px 0;
+  line-height: 1.9em;
+}
+
+
 
 
 .item-table th {
@@ -103,11 +111,43 @@ table.display-table {
   margin: 10px;
 }
 
-.entity-box {
-  max-width: 75%;
+
+
+/* ---------- ENTITY BOX TABS ---------- */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #f3ebf5;
+  border-radius: 6px 6px 0 0;
 }
 
-ol li p {
-  margin: 4px 0 20px 0;
-  line-height: 1.9em;
+.tab button {
+  background-color: transparent;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.2s ease;
+  font-size: 15px;
+  color: #333;
+}
+
+.tab button:hover {
+  background-color: #e8ddf2;
+}
+
+.tab button.active {
+  background-color: #5526e3;
+  color: white;
+}
+
+/* Tab content box */
+
+.tabcontent {
+  display: none;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
 }

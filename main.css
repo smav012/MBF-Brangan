@@ -4,7 +4,16 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.5;
+  background-color: #f2edf4;
 }
+
+img[alt="MBF Brangan Project Logo"] {
+  width: 35%;   /* adjust size */
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
 
 a {
   color: #5526e3;
@@ -29,11 +38,11 @@ h2 {
   font-size: 20px;
 }
 
-/* li breathing room 
+/* li breathing room */
 li {
-   margin:0 0 -10px 0;   
+   margin:0 0 5px 0;   
 }
-*/
+
 
 ol li p {
   margin: 4px 0 20px 0;

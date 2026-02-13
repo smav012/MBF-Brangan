@@ -4,19 +4,23 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.5;
-  background-color: #f2edf4;
+  background-color: #F2EDF4;
+  color: #000F35;
 }
 
-img[alt="MBF Brangan Project Logo"] {
-  width: 35%;   /* adjust size */
+/* ---------- LOGO ---------- */
+
+img[alt="MBF Logo"] {
+  width: 35%;
   height: auto;
   display: block;
   margin-bottom: 20px;
 }
 
+/* ---------- LINKS ---------- */
 
 a {
-  color: #5526e3;
+  color: #5525E3;
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -24,9 +28,14 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
-  color: #3d1db8;
+  color: #8891ED;
 }
 
+/* ---------- HEADINGS ---------- */
+
+h1, h2, h3 {
+  color: #000F35;
+}
 
 h1 {
   font-size: 28px;
@@ -38,73 +47,53 @@ h2 {
   font-size: 20px;
 }
 
-/* li breathing room */
-li {
-   margin:0 0 5px 0;   
-}
+/* ---------- LIST SPACING ---------- */
 
+li {
+  margin: 0 0 5px 0;
+}
 
 ol li p {
   margin: 4px 0 20px 0;
   line-height: 1.9em;
 }
 
-
-
-
-.item-table th {
-  background-color: #5526e3;
-  color: white;
-  font-weight: normal;
-}
-
-.tablinks {
-  background-color: #f3ebf5;
-  border: 1px solid #ccc;
-  padding: 8px 14px;
-  cursor: pointer;
-}
-
-.tablinks.active {
-  background-color: #5526e3;
-  color: white;
-}
-
+/* ---------- TABLES ---------- */
 
 table.item-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px 0;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
 }
 
 table.display-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    table-layout: auto;
-    text-align: left;
-    width: 75%;
+  border-collapse: collapse;
+  table-layout: auto;
+  text-align: left;
+  width: 75%;
 }
 
-.item-table td, th {
-    border: 1px solid #000000;
-    text-align: left;
-    padding: 10px;
+.item-table th {
+  background-color: #5525E3;
+  font-weight: normal;
+}
+
+.item-table td,
+.item-table th {
+  border: 1px solid #cecccc;
+  padding: 10px;
 }
 
 .item-table tr:nth-child(even) {
-    background-color: #f3ebf5;
+  background-color: #F2EDF4;
 }
 
-/*.edit-table tr:nth-child(even) {
-    background-color: #dddddd;
-}*/
-
-/* box for menus and listings */
+/* ---------- BOXES ---------- */
 
 .simplebox,
 .textbox {
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid #cecccc;
   border-radius: 6px;
 }
 
@@ -114,20 +103,17 @@ table.display-table {
   margin: 10px;
 }
 
-/* box for text */
 .textbox {
   padding: 10px;
   margin: 10px;
 }
 
-
-
-/* ---------- ENTITY BOX TABS ---------- */
+/* ---------- TABS ---------- */
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ddd;
-  background-color: #f3ebf5;
+  border: 1px solid #cecccc;
+  background-color: #E7FAFC;
   border-radius: 6px 6px 0 0;
 }
 
@@ -139,24 +125,26 @@ table.display-table {
   padding: 10px 16px;
   transition: 0.2s ease;
   font-size: 15px;
-  color: #333;
+  color: #000F35;
 }
 
 .tab button:hover {
-  background-color: #e8ddf2;
-}
-
-.tab button.active {
-  background-color: #5526e3;
+  background-color: #8891ED;
   color: white;
 }
 
-/* Tab content box */
+.tab button.active {
+  background-color: #5525E3;
+  color: white;
+}
+
+/* ---------- TAB CONTENT ---------- */
 
 .tabcontent {
   display: none;
   padding: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #cecccc;
   border-top: none;
   border-radius: 0 0 6px 6px;
+  background-color: white;
 }
